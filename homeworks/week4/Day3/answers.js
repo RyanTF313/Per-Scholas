@@ -80,15 +80,81 @@ wolfy[0] = "Gameboy";
 // Use a for of loop(not a typo - try it out! Try a for of loop) to call toUpperCase() on each of them and print out the result.
 // As a developer, you'll be a lifelong learner and constantly encountering new things. We'll give you little stretches like this to get you used to looking at documentation and figuring some things out on your own. You've got this!
 
-const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 for (let turtle of turtles) {
-  turtle = turtle.toUpperCase()
-  console.log(turtle)
+  turtle = turtle.toUpperCase();
+  console.log(turtle);
 }
 
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+// Here is a list of favMovies:
+
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
+// - Console log: the index of Titanic
+// - Do the following and console.log the final results (I have included some thought questions, you don't have to write out an answer for those marked as such):
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// - use the .sort method
+// - Thought question: what did this do to the array? Did it permanently alter it?
+// A. It sorted the array alphabetically. Yes it mutated the array.
+// - Use the method pop
+// - push "Guardians of the Galaxy"
+// - Reverse the array
+// - Use the shift method
+// - unshift- what does it return?
+// A. It returns the new length of the array.
+// - splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself)
+// - Thought question: did this permanently alter our array?
+// A. Yes
+// - slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it)
+//  - Thought question: did this permanently alter our array?
+// A. No
+// - store the value of your slice in a variable, console.log it
+// - Thought question: what is going on here?
+// - console.log your final results
+// - After running the above tasks, console.log the index of "Fast and Furious"
+// - We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// A. -1
+// - Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
+// A. No. The value of the variable is an array and const prevents us from changing that value from being an array not the elements inside of it.
+
+console.log(favMovies.indexOf("Titanic"));
+favMovies.sort();
+favMovies.pop();
+favMovies.push("Guardians of the Galaxy");
+favMovies.reverse();
+favMovies.shift();
+favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar");
+favMovies.slice(Math.floor((favMovies.length - 1) / 2), favMovies.length - 1);
+const bottomhalf = favMovies.slice(
+  Math.floor((favMovies.length - 1) / 2),
+  favMovies.length - 1
+);
+console.log(bottomhalf)
+console.log(favMovies)
+console.log(favMovies.indexOf("Fast and Furious"));
 
 ////////////////////////////////
 // Where is Waldo
