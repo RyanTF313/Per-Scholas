@@ -14,6 +14,18 @@ for (let i = 1; i <= 20; i++) {
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
+// Write a for loop that will log only the even numbers in 0 through 200.
+// Hint: Think about the increment expression.
+// First option
+for (let i = 0; i <= 200; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+// Second Option
+for (let i = 0; i <= 200; i+=2) {
+    console.log(i);
+}
 
 ////////////////////////////////
 // Fizz Buzz
