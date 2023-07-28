@@ -170,13 +170,28 @@ const whereIsWaldo = [
 // Change "Neff" to "No One"
 // Access and console.log "Waldo"
 
-whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"), 1)
-whereIsWaldo[1].splice(whereIsWaldo.indexOf("Neff")-1, 1, "No One")
-console.log(whereIsWaldo[2][1][1])
+whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"), 1);
+whereIsWaldo[1].splice(whereIsWaldo.indexOf("Neff") - 1, 1, "No One");
+console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+// Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+// For every even number in your loop, log "...human...why you taking pictures of me?...", "...the catnip made me do it...", or "...why does the red dot always get away..." at random.
+let i = 1;
+const catThoughts = [
+  "...human...why you taking pictures of me?...",
+  "...the catnip made me do it...",
+  "...why does the red dot always get away...",
+];
+while (i <= 20) {
+  console.log("Love me, pet me! HSSSSSS!");
+  if (i % 2 === 0) {
+    console.log(catThoughts[Math.floor(Math.random() * catThoughts.length)]);
+  }
+  i++
+}
 
 ////////////////////////////////
 //  Find the Median
