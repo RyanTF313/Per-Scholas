@@ -152,13 +152,27 @@ const bottomhalf = favMovies.slice(
   Math.floor((favMovies.length - 1) / 2),
   favMovies.length - 1
 );
-console.log(bottomhalf)
-console.log(favMovies)
+console.log(bottomhalf);
+console.log(favMovies);
 console.log(favMovies.indexOf("Fast and Furious"));
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+// With the following multi-dimensional array
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+  ["Lucinda", "Jacc", "Neff", "Snoop"],
+  ["Petunia", ["Baked Goods", "Waldo"]],
+];
+// Remove Eggbert (hint look at the slice/splice method(s))
+// Change "Neff" to "No One"
+// Access and console.log "Waldo"
+
+whereIsWaldo.splice(whereIsWaldo.indexOf("Eggbert"), 1)
+whereIsWaldo[1].splice(whereIsWaldo.indexOf("Neff")-1, 1, "No One")
+console.log(whereIsWaldo[2][1][1])
 
 ////////////////////////////////
 //  Excited Kitten
