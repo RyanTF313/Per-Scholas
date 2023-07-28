@@ -56,7 +56,24 @@ for (let i = 1; i <= 100; i++) {
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
+// Wild Wild Life
+// Use the following arrays to answer the questions below (name,species ,age, hometown): You should be modifying the elements by accessing them. It is up to you which methods to use.
 
+const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"];
+const sharky = ["Sharky", "shark", 20, "Left Coast"];
+const plantee = ["Plantee", "plant", 5000, "Mordor"];
+const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
+const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
+// Plantee just had her birthday; change Plantee's array to reflect her being a year older.
+// Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
+// Give D'Art a second hometown by adding "Hawkins"
+// Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and replace it with "Gameboy".
+
+plantee[2]++;
+wolfy[3] = "Gotham City";
+dart[3] += ", Hawkins";
+wolfy[0] = "Gameboy";
+console.log(wolfy);
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
